@@ -1,0 +1,5 @@
+curl "https://api.infermedica.com/v3/parse" \
+-X "POST" \
+-H "App-Id: 6b2c1128" -H "App-Key: ed31ef2357c0a91740327294a146c97d" \
+-H "Content-Type: application/json" \
+-d '{"text": "I often feel cold.", "age": {"value":30}, "include_tokens": true}' 
