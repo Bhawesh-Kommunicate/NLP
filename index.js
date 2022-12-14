@@ -1,13 +1,13 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
-const { getSymptoms } = require("./routes/symtoms.routes");
+const { getSymptoms } = require("./routes/symptoms.route");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 let port = 5008;
 getSymptoms(app);
 app.listen(port, () => {
-  console.log("app is listening over port=5001");
+  console.log("app is listening over port=", port);
 });
 const axios = require("axios");
 // async function res(input, output) {
