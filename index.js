@@ -2,7 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
 const { getSymptoms } = require("./routes/symptoms.route");
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 let port = 5008;
 getSymptoms(app);
